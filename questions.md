@@ -36,7 +36,7 @@
    const y = "2"
    x + + y
     ```
-7. #### Convert this browser js code to nodejs code
+7. #### Convert this browser code to nodejs code
    ```javascript
    window.customUserName = "User1"
    ```
