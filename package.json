@@ -1,0 +1,13 @@
+{
+  "name": "javascript_interview_questions",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.1.3"
+  }
+}
