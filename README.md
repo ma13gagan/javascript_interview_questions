@@ -172,4 +172,24 @@
       lastLoginIp?:string
    }
    ```
-33. #### Problems from [Typescript playground](https://www.typescriptlang.org/play?#code/PTAEEEBtNAXALApqARoyB7A7qAjgV0QGdYBLDAOyNAEMAnZByG2RAEzgzgE8AHYgMZ1SvWADpQAMVIAPYAGUMkAG7IEyAsTKVqKbqABW+EqAHwaFAOakrcJD35ExAKGchQARgkBhC6G4Y+KBEvBiwtKC8dBgokIgAtqCUoJaIsACqRIh0oABm+BQC2hQA-KAAkrn+xAA0kXE0WXmyoKSwdRYcWPD6bBjEFADk4TQOyNnRORgCAvg5SAwlzrB8yAAqmdmgALygAN7OoEegFDTxiABcwbDCVjWHxwk0pJBXJLeWzgC+rgI64akMlkcrsABQASiuG2BOwAfPsHkc-lRwsYtrsDscsSczpdQAAiABS8Eo+Pu2Me8WerwJBiIlAAAogZGdeHExH94mTEdjeI0iFgMHQ2Fd8WstB4AEwAZnxPJ+WIYsDmFFAaLo31cbjAkokABEuPTzqZzFZkDY7Mg0JgcH82Mh6XYWKAZKAlSrqOoxv5Ivz2CcwrQKNxnPlCsUXaDuFcLNxIUH9Jjju66KqQz9nMiTKNdjJQQBWAAs4K17mlPlNqUtY2oGCquRsbE2OTDRXIqsdCGdpCqpA49Es+HOFHCpGoFEDfKIWQ46lVbTdaQ9FWbAG0ALpJdR0LBj5DlZvLVYrmEYnl9q4UIdoOjk46nc5vG42Sx3o5PF5Pj6azP-NXAogrgPYENx2UBVx5PYL08OoHzxfFm08MlQA-Gl8XVDwmRZeI2UQDkMC5L4332aDJVg3FRUQyVkNQ0V1UlLDWXZTl8SIyDoOlcjHwJRDZTqWiCXVaVGJw5iCNY4ioJFUBCy4+DEMLGiqU-QTgULETcPwwjJOg-M5MomF8yU6k6OBfMNLE7TnHXVxWwjBsKCbYFQT7EpL2vbJwQRLEe1AFy2C8lNVXVJwHLYUF1Thf9sjEPsdm2XY+y8gAfZLoroIhVwABhsxUl1TdKiB-bUZJ8BgWGQUZUgobJSAEKQhUSGxWDoXIaAEZBciFatrWwPJGqSFADEQIoJC6uhEhiYailAXdoFoSAsBobhqGRWBnlVWBBUiaJ+DoMhiFAZQaEgQggw4VCJHkcx+CSKpjtOxASqmkbwgEPw0ATBAXzqFB8HCCZupemb4mMcJKEgfQ1o2naMD2g7qFyaJEges7gfCP7wgQDAmiiOHsgRo6TrOuaYBOpaVtQB1nysFxfxRfqJrApMjlRvEWexAT8VYEgLMQbkKSOODRXFExmwFwXeBJGqrgATnlhXZeIrEaFSK58wANmItisUBjKrg53XlLQgA5QMHri1DaDYNgGGnCWKSlyh4LN8ILY4J2apODy6DlLEfi+IA)
+33. #### Create a function `mergeRoles` that satisfies below type
+   ```typescript
+   interface IRole {
+      resources: {
+         resourseId: number
+         fields: {
+            fieldId: number
+            permission: {
+               canRead: boolean
+               canCreate: boolean
+               canEdit: boolean
+               canDelete: boolean
+            }
+         }[]
+      }[]
+   }
+   
+   const mergeRoles = (roles: IRole[]): IRole => {}
+   ```
+
+34. #### Problems from [Typescript playground](https://www.typescriptlang.org/play?#code/PTAEEEBtNAXALApqARoyB7A7qAjgV0QGdYBLDAOyNAEMAnZByG2RAEzgzgE8AHYgMZ1SvWADpQAMVIAPYAGUMkAG7IEyAsTKVqKbqABW+EqAHwaFAOakrcJD35ExAKGchQARgkBhC6G4Y+KBEvBiwtKC8dBgokIgAtqCUoJaIsACqRIh0oABm+BQC2hQA-KAAkrn+xAA0kXE0WXmyoKSwdRYcWPD6bBjEFADk4TQOyNnRORgCAvg5SAwlzrB8yAAqmdmgALygAN7OoEegFDTxiABcwbDCVjWHxwk0pJBXJLeWzgC+rgI64akMlkcrsABQASiuG2BOwAfPsHkc-lRwsYtrsDscsSczpdQAAiABS8Eo+Pu2Me8WerwJBiIlAAAogZGdeHExH94mTEdjeI0iFgMHQ2Fd8WstB4AEwAZnxPJ+WIYsDmFFAaLo31cbjAkokABEuPTzqZzFZkDY7Mg0JgcH82Mh6XYWKAZKAlSrqOoxv5Ivz2CcwrQKNxnPlCsUXaDuFcLNxIUH9Jjju66KqQz9nMiTKNdjJQQBWAAs4K17mlPlNqUtY2oGCquRsbE2OTDRXIqsdCGdpCqpA49Es+HOFHCpGoFEDfKIWQ46lVbTdaQ9FWbAG0ALpJdR0LBj5DlZvLVYrmEYnl9q4UIdoOjk46nc5vG42Sx3o5PF5Pj6azP-NXAogrgPYENx2UBVx5PYL08OoHzxfFm08MlQA-Gl8XVDwmRZeI2UQDkMC5L4332aDJVg3FRUQyVkNQ0V1UlLDWXZTl8SIyDoOlcjHwJRDZTqWiCXVaVGJw5iCNY4ioJFUBCy4+DEMLGiqU-QTgULETcPwwjJOg-M5MomF8yU6k6OBfMNLE7TnHXVxWwjBsKCbYFQT7EpL2vbJwQRLEe1AFy2C8lNVXVJwHLYUF1Thf9sjEPsdm2XY+y8gAfZLoroIhVwABhsxUl1TdKiB-bUZJ8BgWGQUZUgobJSAEKQhUSGxWDoXIaAEZBciFatrWwPJGqSFADEQIoJC6uhEhiYailAXdoFoSAsBobhqGRWBnlVWBBUiaJ+DoMhiFAZQaEgQggw4VCJHkcx+CSKpjtOxASqmkbwgEPw0ATBAXzqFB8HCCZupemb4mMcJKEgfQ1o2naMD2g7qFyaJEges7gfCP7wgQDAmiiOHsgRo6TrOuaYBOpaVtQB1nysFxfxRfqJrApMjlRvEWexAT8VYEgLMQbkKSOODRXFExmwFwXeBJGqrgATnlhXZeIrEaFSK58wANmItisUBjKrg53XlLQgA5QMHri1DaDYNgGGnCWKSlyh4LN8ILY4J2apODy6DlLEfi+IA)
