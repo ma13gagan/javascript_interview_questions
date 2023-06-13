@@ -57,3 +57,8 @@ const form = {
         phone: "Not valid phone number",
     },
 };
+
+// 5. Change the types for the below function so that if x and y arguments are both number then number is returned, if both are string then string is returned.
+const add = (x: any, y: any): any => {
+    return x + y;
+};
