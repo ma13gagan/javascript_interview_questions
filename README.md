@@ -86,7 +86,15 @@
 	    setTimeout(function() { console.log(i); }, i * 1000 );
     }
    ```
-17. #### Find the pairs of array element for which sum is equal to given target value.
+17. #### Create the `Calculator` class in Typescript that will allow you to do this?
+   ```typescript
+   const calculate = new Calculator(5)
+   calculate.value // output 5
+   calculate.add(5,7) // add method can accept any number args
+   calculate.multiply(2).add(4).divide(4).subtract(1)
+   calculate.value // output 8.5
+   ```
+18. #### Find the pairs of array element for which sum is equal to given target value.
    ```javascript
    let ar = [1, 2, 3, 4, 6, 7, 8, 9];
 
@@ -95,22 +103,73 @@
    }
     console.log(x(ar, 9)) // Output [[6,3], [7,2], [8,1]]
    ```
-18. #### Find the missing number from unsorted array with O(n) complexity
+19. #### Find the missing number from unsorted array with O(n) complexity
    ```javascript
    let ar = [2, 7, 8, 5, 1, 4, 3, 6];
-   ```
-19. #### What will be the output of the below snippet and why?
-   ```javascript
-    const a = Math.max() > Math.min();
-    console.log(a)
    ```
 20. #### What will be the output of the below snippet and why?
    ```javascript
     const a = Math.max() > Math.min();
     console.log(a)
    ```
-21. #### What will be the output of `console.log(0.2 + 0.1 === 0.3);`?
-22. #### What will be the output of `[] == ![];`?
-23. #### What will be the output of `"b" + "a" + + "a" + "a";`?
-24. #### What will be the output of `true + true + true;`?
-25. #### [Typescript playground](https://www.typescriptlang.org/play?#code/PTAEEEBtNAXALApqARoyB7A7qAjgV0QGdYBLDAOyNAEMAnZByG2RAEzgzgE8AHYgMZ1SvWADpQAMVIAPYAGUMkAG7IEyAsTKVqKbqABW+EqAHwaFAOakrcJD35ExAKGchQARgkB1c7FCk1OqgvHQYKJCIALagWKQIqOjYphhsyBYcAGayAeLOsHzIACoAqkSIdKAAvKAA3s6gjU2NFDRRiABcoCTCVgA0Dc1N0TSkkF09NpaDjQC+rgI6-paIsGUV1aAAFACUHaXllVUAfHUzKVT+xhs19UNNre1dAEQAUvCUzwP3jSNjLwYiJQAAKIGRtXiRMSLKJfc7NXg0IhELAYOhsF5FLQeABMAGZnud5s0GLB8HQKKBrnRnPM3GAcRIACJcIHtUzmKzIGx2ZBoTCkHCLNLdLgIFigGSgUnkqi8hzIfSI5HsUAUDD+CzcZyZfAUATaSkyLbcLpava0Cj6O5NGUU0DaumLS60TbGgCsABYdq53HiJABhTkreUFRygDCZUDZChsdaVXX6w2iuwS0hR0gceiWfDtCj+QJqjUhJHlDjqSnxaWrWXUACS8YA2gBdCPqOhxcqgBuHfKFbvxzY2xqZjoUXNoOjfB5tTrdWC9SzT35RUbjeeL2kLJZUw5ELo9iotzaN861UeePpq2cvQceL6gP7r54eYHcaEYWGzZd1C84q+PHOzyDjiD5Pi8OJvh+X4-ueGKgHiAE3qAwGHAhYGrv8KF4lBMLPN+Z4Xp6SFPChg6ehha4vJ6uGfvhsEXu6JFAYO7qUVhzzurRMHOM2riJga5CUjGcaHFsmYAPxdOOUSTjsw4BJk4lsDs1Zkva1JOCJWzUtUpzUmImbVFUNSZqpAA+5m7hURCNgADHxJI1hpe60kAA)
+21. #### What will be the output of the below snippet and why?
+   ```javascript
+    const a = Math.max() > Math.min();
+    console.log(a)
+   ```
+22. #### What will be the output of `console.log(0.2 + 0.1 === 0.3);`?
+23. #### What will be the output of `[] == ![];`?
+24. #### What will be the output of `"b" + "a" + + "a" + "a";`?
+25. #### What will be the output of `true + true + true;`?
+26. #### What does the `Record` type in typescript do?
+27. #### What is the return type of `JSON.parse()` function?
+28. #### When to use the `unknown` keyword? And how it differs from `never`?
+29. #### How to make all the properties of the below interface optional?
+   ```typescript
+   interface IUser {
+      name: string
+      age: number
+      dob: Date
+      email: string
+      password: string
+      lastLoginDate?: Date
+      lastLoginIp?:string
+   }
+   ```
+30. #### How to make all the properties of the below interface required?
+   ```typescript
+   interface IUser {
+      name: string
+      age: number
+      dob: Date
+      email: string
+      password: string
+      lastLoginDate?: Date
+      lastLoginIp?:string
+   }
+   ```
+31. #### How to make the `dob` property of the below interface optional?
+   ```typescript
+   interface IUser {
+      name: string
+      age: number
+      dob: Date
+      email: string
+      password: string
+      lastLoginDate?: Date
+      lastLoginIp?:string
+   }
+   ```
+32. #### How to make the `lastLoginDate` property of the below interface required?
+   ```typescript
+   interface IUser {
+      name: string
+      age: number
+      dob: Date
+      email: string
+      password: string
+      lastLoginDate?: Date
+      lastLoginIp?:string
+   }
+   ```
+33. #### Problems from [Typescript playground](https://www.typescriptlang.org/play?#code/PTAEEEBtNAXALApqARoyB7A7qAjgV0QGdYBLDAOyNAEMAnZByG2RAEzgzgE8AHYgMZ1SvWADpQAMVIAPYAGUMkAG7IEyAsTKVqKbqABW+EqAHwaFAOakrcJD35ExAKGchQARgkBhC6G4Y+KBEvBiwtKC8dBgokIgAtqCUoJaIsACqRIh0oABm+BQC2hQA-KAAkrn+xAA0kXE0WXmyoKSwdRYcWPD6bBjEFADk4TQOyNnRORgCAvg5SAwlzrB8yAAqmdmgALygAN7OoEegFDTxiABcwbDCVjWHxwk0pJBXJLeWzgC+rgI64akMlkcrsABQASiuG2BOwAfPsHkc-lRwsYtrsDscsSczpdQAAiABS8Eo+Pu2Me8WerwJBiIlAAAogZGdeHExH94mTEdjeI0iFgMHQ2Fd8WstB4AEwAZnxPJ+WIYsDmFFAaLo31cbjAkokABEuPTzqZzFZkDY7Mg0JgcH82Mh6XYWKAZKAlSrqOoxv5Ivz2CcwrQKNxnPlCsUXaDuFcLNxIUH9Jjju66KqQz9nMiTKNdjJQQBWAAs4K17mlPlNqUtY2oGCquRsbE2OTDRXIqsdCGdpCqpA49Es+HOFHCpGoFEDfKIWQ46lVbTdaQ9FWbAG0ALpJdR0LBj5DlZvLVYrmEYnl9q4UIdoOjk46nc5vG42Sx3o5PF5Pj6azP-NXAogrgPYENx2UBVx5PYL08OoHzxfFm08MlQA-Gl8XVDwmRZeI2UQDkMC5L4332aDJVg3FRUQyVkNQ0V1UlLDWXZTl8SIyDoOlcjHwJRDZTqWiCXVaVGJw5iCNY4ioJFUBCy4+DEMLGiqU-QTgULETcPwwjJOg-M5MomF8yU6k6OBfMNLE7TnHXVxWwjBsKCbYFQT7EpL2vbJwQRLEe1AFy2C8lNVXVJwHLYUF1Thf9sjEPsdm2XY+y8gAfZLoroIhVwABhsxUl1TdKiB-bUZJ8BgWGQUZUgobJSAEKQhUSGxWDoXIaAEZBciFatrWwPJGqSFADEQIoJC6uhEhiYailAXdoFoSAsBobhqGRWBnlVWBBUiaJ+DoMhiFAZQaEgQggw4VCJHkcx+CSKpjtOxASqmkbwgEPw0ATBAXzqFB8HCCZupemb4mMcJKEgfQ1o2naMD2g7qFyaJEges7gfCP7wgQDAmiiOHsgRo6TrOuaYBOpaVtQB1nysFxfxRfqJrApMjlRvEWexAT8VYEgLMQbkKSOODRXFExmwFwXeBJGqrgATnlhXZeIrEaFSK58wANmItisUBjKrg53XlLQgA5QMHri1DaDYNgGGnCWKSlyh4LN8ILY4J2apODy6DlLEfi+IA)
