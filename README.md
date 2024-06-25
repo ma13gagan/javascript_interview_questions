@@ -43,11 +43,11 @@
 8. #### What will be the output of the below snippet and why?
    ```javascript
    (function(){
-   var a = b = 3;
+        var a = b = 3;
    })();
 
-   console.log("a defined? " + (typeof a !== 'undefined'));
-   console.log("b defined? " + (typeof b !== 'undefined'));
+   console.log(typeof a !== 'undefined');
+   console.log(typeof b !== 'undefined');
    ```
 9. #### How to check if `foo` is an object?
 10. In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
@@ -63,7 +63,7 @@
 12. #### What will be the output of `typeof typeof 1`?
 13. #### What will be the out of the below snippet?
    ```javascript
-   let y = 1;
+    let y = 1;
     if (function f() {}) {
         y += typeof f;
     }
@@ -131,7 +131,7 @@
       lastLoginIp?:string
    }
    ```
-29. #### How to make all the properties of the below interface required?
+29. #### Create `IUser2` from `IUser` and make all the properties required?
    ```typescript
    interface IUser {
       name: string
@@ -143,7 +143,7 @@
       lastLoginIp?:string
    }
    ```
-30. #### How to make the `dob` property of the below interface optional?
+30. #### Create `IUser2` from `IUser` and make the `dob` property optional?
    ```typescript
    interface IUser {
       name: string
@@ -155,7 +155,7 @@
       lastLoginIp?:string
    }
    ```
-31. #### How to make the `lastLoginDate` property of the below interface required?
+31. #### Create `IUser2` from `IUser` and make `lastLoginDate` property required?
    ```typescript
    interface IUser {
       name: string
