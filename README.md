@@ -28,7 +28,7 @@
     ```javascript
    const x = 2
    const y = "2"
-   x + y
+   console.log(x + y)
     ```
 6. #### What will be the output of the below snippet and why?
     ```javascript
