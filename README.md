@@ -59,7 +59,7 @@
         console.log(4);
     })();
    ```
-11. #### What will be the output of `typeof undefined == typeof Null`?
+11. #### What will be the output of `typeof undefined == typeof null`?
 12. #### What will be the output of `typeof typeof 1`?
 13. #### What will be the out of the below snippet?
    ```javascript
@@ -112,19 +112,14 @@
     const a = Math.max() > Math.min();
     console.log(a)
    ```
-21. #### What will be the output of the below snippet and why?
-   ```javascript
-    const a = Math.max() > Math.min();
-    console.log(a)
-   ```
-22. #### What will be the output of `console.log(0.2 + 0.1 === 0.3);`?
-23. #### What will be the output of `[] == ![];`?
-24. #### What will be the output of `"b" + "a" + + "a" + "a";`?
-25. #### What will be the output of `true + true + true;`?
-26. #### What does the `Record` type in typescript do?
-27. #### What is the return type of `JSON.parse()` function?
-28. #### When to use the `unknown` keyword? And how it differs from `never`?
-29. #### How to make all the properties of the below interface optional?
+21. #### What will be the output of `console.log(0.2 + 0.1 === 0.3);`?
+22. #### What will be the output of `[] == ![];`?
+23. #### What will be the output of `"b" + "a" + + "a" + "a";`?
+24. #### What will be the output of `true + true + true;`?
+25. #### What does the `Record` type in typescript do?
+26. #### What is the return type of `JSON.parse()` function?
+27. #### When to use the `unknown` keyword? And how it differs from `never`?
+28. #### How to make all the properties of the below interface optional?
    ```typescript
    interface IUser {
       name: string
@@ -136,7 +131,7 @@
       lastLoginIp?:string
    }
    ```
-30. #### How to make all the properties of the below interface required?
+29. #### How to make all the properties of the below interface required?
    ```typescript
    interface IUser {
       name: string
@@ -148,7 +143,7 @@
       lastLoginIp?:string
    }
    ```
-31. #### How to make the `dob` property of the below interface optional?
+30. #### How to make the `dob` property of the below interface optional?
    ```typescript
    interface IUser {
       name: string
@@ -160,7 +155,7 @@
       lastLoginIp?:string
    }
    ```
-32. #### How to make the `lastLoginDate` property of the below interface required?
+31. #### How to make the `lastLoginDate` property of the below interface required?
    ```typescript
    interface IUser {
       name: string
@@ -172,7 +167,7 @@
       lastLoginIp?:string
    }
    ```
-33. #### Create a function `mergeRoles` that satisfies below type
+32. #### Create a function `mergeRoles` that satisfies below type
    ```typescript
    interface IRole {
       resources: {
@@ -192,4 +187,4 @@
    const mergeRoles = (roles: IRole[]): IRole => {}
    ```
 
-34. #### Problems from [Typescript playground](https://www.typescriptlang.org/play?#code/PTAEEEBtNAXALApqARoyB7A7qAjgV0QGdYBLDAOyNAEMAnZByG2RAEzgzgE8AHYgMZ1SvWADpQAMVIAPYAGUMkAG7IEyAsTKVqKbqABW+EqAHwaFAOakrcJD35ExAKGchQARgkBhC6G4Y+KBEvBiwtKC8dBgokIgAtqCUoJaIsACqRIh0oABm+BQC2hQA-KAAkrn+xAA0kXE0WXmyoKSwdRYcWPD6bBjEFADk4TQOyNnRORgCAvg5SAwlzrB8yAAqmdmgALygAN7OoEegFDTxiABcwbDCVjWHxwk0pJBXJLeWzgC+rgI64akMlkcrsABQASiuG2BOwAfPsHkc-lRwsYtrsDscsSczpdQAAiABS8Eo+Pu2Me8WerwJBiIlAAAogZGdeHExH94mTEdjeI0iFgMHQ2Fd8WstB4AEwAZnxPJ+WIYsDmFFAaLo31cbjAkokABEuPTzqZzFZkDY7Mg0JgcH82Mh6XYWKAZKAlSrqOoxv5Ivz2CcwrQKNxnPlCsUXaDuFcLNxIUH9Jjju66KqQz9nMiTKNdjJQQBWAAs4K17mlPlNqUtY2oGCquRsbE2OTDRXIqsdCGdpCqpA49Es+HOFHCpGoFEDfKIWQ46lVbTdaQ9FWbAG0ALpJdR0LBj5DlZvLVYrmEYnl9q4UIdoOjk46nc5vG42Sx3o5PF5Pj6azP-NXAogrgPYENx2UBVx5PZWhFTw6gfPF8WbTwyVAD8aXxdUPCZFl4jZRAOQwLlQC+N99mgq5JTg3FRSQyUULQ0V1UlbDWXZTl8WI0ioIvUBpSox8CSQ2U6gYgl1WlFjcLYwiOJIyDyNAQt+IQpDC3oqlPzE4FC0kvCCKIuSsW4mD82UmiYXzdTqUY4F8106SDPuddXFbCMGwoJtgVBPsSkva9snBBEsR7UBvLYQKU1VdUnHcthQXVOF-2yMQ+x2bZdj7QKAB8sqSugiFXAAGZzFSXVM8qIH9tUUnwGBYZBRlSChslIAQpCFRIbFYOhchoARkFyIVq2tbA8g6pIUAMRAigkQa6ESGIpqKUBd2gWhICwGhuGoZFYGeVVYEFSJon4OgyGIUBlBoSBCCDDg0IkeRzH4JIqium7EGqxbpvCAQ-DQBMEBfOoUHwcIJiG77lviYxwkoSB9F2-bjowU7zuoXJokSd7bqh8JQfCBAMCaKJUeydHLuu27Vpga7Nu21AHWfKwXF-FExvmsCkyOHG8W57FRPxVgSHsxBuQpI54NFcUTGbcWJd4ElmquABONX1ZV0isRoVIrnzAA2UjDMeOhJkAoKJcFgA5QN3tStDaDYNgGGneWKUVygEJt8I7Y4D3mpOfy6DlLEfgzar8wrCwqy9FZHA54b0FG1z22CLgu1HKpXU6H0ByHRAR2oegrTCeBA-iG9LVVK8K62MdF2VVN2DqEKUFL2gGGuD4q67l9WmoSL2BcLMRidsDQRkGNgzqaME3jWNEv5yKXVAABqfxviAA)
+33. #### Problems from [Typescript playground](https://www.typescriptlang.org/play?#code/PTAEEEBtNAXALApqARoyB7A7qAjgV0QGdYBLDAOyNAEMAnZByG2RAEzgzgE8AHYgMZ1SvWADpQAMVIAPYAGUMkAG7IEyAsTKVqKbqABW+EqAHwaFAOakrcJD35ExAKGchQARgkBhC6G4Y+KBEvBiwtKC8dBgokIgAtqCUoJaIsACqRIh0oABm+BQC2hQA-KAAkrn+xAA0kXE0WXmyoKSwdRYcWPD6bBjEFADk4TQOyNnRORgCAvg5SAwlzrB8yAAqmdmgALygAN7OoEegFDTxiABcwbDCVjWHxwk0pJBXJLeWzgC+rgI64akMlkcrsABQASiuG2BOwAfPsHkc-lRwsYtrsDscsSczpdQAAiABS8Eo+Pu2Me8WerwJBiIlAAAogZGdeHExH94mTEdjeI0iFgMHQ2Fd8WstB4AEwAZnxPJ+WIYsDmFFAaLo31cbjAkokABEuPTzqZzFZkDY7Mg0JgcH82Mh6XYWKAZKAlSrqOoxv5Ivz2CcwrQKNxnPlCsUXaDuFcLNxIUH9Jjju66KqQz9nMiTKNdjJQQBWAAs4K17mlPlNqUtY2oGCquRsbE2OTDRXIqsdCGdpCqpA49Es+HOFHCpGoFEDfKIWQ46lVbTdaQ9FWbAG0ALpJdR0LBj5DlZvLVYrmEYnl9q4UIdoOjk46nc5vG42Sx3o5PF5Pj6azP-NXAogrgPYENx2UBVx5PZWhFTw6gfPF8WbTwyVAD8aXxdUPCZFl4jZRAOQwLlQC+N99mgq5JTg3FRSQyUULQ0V1UlbDWXZTl8WI0ioIvUBpSox8CSQ2U6gYgl1WlFjcLYwiOJIyDyNAQt+IQpDC3oqlPzE4FC0kvCCKIuSsW4mD82UmiYXzdTqUY4F8106SDPuddXFbCMGwoJtgVBPsSkva9snBBEsR7UBvLYQKU1VdUnHcthQXVOF-2yMQ+x2bZdj7QKAB8sqSugiFXAAGZzFSXVM8qIH9tUUnwGBYZBRlSChslIAQpCFRIbFYOhchoARkFyIVq2tbA8g6pIUAMRAigkQa6ESGIpqKUBd2gWhICwGhuGoZFYGeVVYEFSJon4OgyGIUBlBoSBCCDDg0IkeRzH4JIqium7EGqxbpvCAQ-DQBMEBfOoUHwcIJiG77lviYxwkoSB9F2-bjowU7zuoXJokSd7bqh8JQfCBAMCaKJUeydHLuu27Vpga7Nu21AHWfKwXF-FExvmsCkyOHG8W57FRPxVgSHsxBuQpI54NFcUTGbcWJd4ElmquABONX1ZV0isRoVIrnzAA2UjDMeOhJkAoKJcFgA5QN3tStDaDYNgGGneWKUVygEJt8I7Y4D3mpOfy6DlLEfgzar8wrCwqy9FZHA54b0FG1z22CLgu1HKpXU6H0ByHRAR2oegrTCeBA-iG9LVVK8K62MdF2VVN2DqEKUFL2gGGuD4q67l9WmoSL2BcLMRidsDQRkGNgzqaME3jWNEv5yKXVAABqfxviAA)
